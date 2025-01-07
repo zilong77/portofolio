@@ -1,0 +1,146 @@
+import Image from "next/image";
+import Link from "next/link";
+
+const Networks = () => {
+  const networks = [
+    {
+      id: 1,
+      image: "/images/Networks/galactica.jpg",
+      name: "Galactica",
+      services: "/not-found",
+      explorer: "https://testnet.kyronode.xyz/galactica",
+      stake: "https://testnet.kyronode.xyz/galactica/staking/",
+    },
+    {
+      id: 2,
+      image: "/images/Networks/nubit.jpg",
+      name: "Nubit",
+      services: "/not-found",
+      explorer: "https://testnet.kyronode.xyz/nubit",
+      stake: "https://testnet.kyronode.xyz/nubit/staking/",
+    },
+    {
+      id: 3,
+      image: "/images/Networks/og.jpg",
+      name: "0g",
+      services: "/not-found",
+      explorer: "https://testnet.kyronode.xyz/og",
+      stake: "https://testnet.kyronode.xyz/og/staking/",
+    },
+    {
+      id: 4,
+      image: "/images/Networks/pell.png",
+      name: "Pell",
+      services: "/not-found",
+      explorer: "https://testnet.kyronode.xyz/pell",
+      stake:
+        "https://testnet.kyronode.xyz/pell/staking/pellvaloper1xc62xzpz85s9mrmcmkvrdgswrdr5qnzj54eu2r",
+    },
+    {
+      id: 5,
+      image: "/images/Networks/pryzm.jpg",
+      name: "Pryzm",
+      services: "/not-found",
+      explorer: "https://testnet.kyronode.xyz/pyrzm",
+      stake: "https://testnet.kyronode.xyz/pyrzm/staking/",
+    },
+    {
+      id: 6,
+      image: "/images/Networks/swisstronic.jpg",
+      name: "Swisstronik",
+      services: "/not-found",
+      explorer: "https://testnet.kyronode.xyz/swisstronik",
+      stake: "https://testnet.kyronode.xyz/swisstronik/staking/",
+    },
+    {
+      id: 7,
+      image: "/images/Networks/warden.png",
+      name: "Warden",
+      services: "/not-found",
+      explorer: "https://testnet.kyronode.xyz/warden",
+      stake: "https://testnet.kyronode.xyz/warden/staking/",
+    },
+    {
+      id: 8,
+      image: "/images/Networks/zenrock.png",
+      name: "Zenrock",
+      services: "/not-found",
+      explorer: "https://testnet.kyronode.xyz/zenrock",
+      stake:
+        "https://testnet.kyronode.xyz/zenrock/staking/zenvaloper1ssflt86hk4j2jjack96f3n4t2fuyspecmf0lgp",
+    },
+    {
+      id: 9,
+      image: "/images/Networks/initia.jpg",
+      name: "Initia",
+      services: "/not-found",
+      explorer: "/not-found",
+      stake: "/not-found",
+    },
+    {
+      id: 10,
+      image: "/images/Networks/dill.jpg",
+      name: "Dill",
+      services: "/not-found",
+      explorer: "https://alps.dill.xyz/",
+      stake: "",
+    },
+  ];
+  return (
+    <section id="networks" className="scroll-mt-28">
+      <div className="content">
+        <h2 className="text-4xl font-bold">Networks</h2>
+        <div className="flex bg-zinc-500 dark:bg-zinc-300 h-px my-5"></div>
+        <p className="text-lg mb-4 text-zinc-700 dark:text-zinc-300">
+          Total staked assets: &lt;$75.000
+        </p>
+        <div className="grid text-lg grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5  ">
+          {networks.map((network) => (
+            <div
+              key={network.id}
+              className="flex flex-col gap-6 bg-white dark:bg-zinc-800 text-left items-start p-8 rounded-lg shadow-md transition hover:scale-105"
+            >
+              <div className="flex items-center gap-4">
+                <Image
+                  src={network.image}
+                  alt={network.name}
+                  width={200}
+                  height={200}
+                  className="w-10 h-10 object-cover bg-amber-300 dark:bg-white rounded-full"
+                />
+                <h3 className="text-2xl font-semibold ">{network.name}</h3>
+              </div>
+              <div className="flex flex-col md:flex-row w-full gap-3">
+                <Link
+                  href={network.services}
+                  target="_blank"
+                  className="px-4 py-2 border border-black dark:border-white w-full text-center rounded hover:text-white hover:bg-amber-700 dark:hover:text-black dark:hover:bg-amber-600"
+                >
+                  Services
+                </Link>
+                <Link
+                  href={network.explorer}
+                  target="_blank"
+                  className="px-4 py-2 border border-black dark:border-white w-full text-center rounded hover:text-white hover:bg-amber-700 dark:hover:text-black dark:hover:bg-amber-600"
+                >
+                  Explorer
+                </Link>
+                {network.stake !== "" && (
+                  <Link
+                    href={network.stake}
+                    target="_blank"
+                    className="px-4 py-2 border border-black dark:border-white w-full text-center rounded hover:text-white hover:bg-amber-700 dark:hover:text-black dark:hover:bg-amber-600"
+                  >
+                    Stake
+                  </Link>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Networks;

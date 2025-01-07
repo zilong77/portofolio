@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: rgb(24 24 27);
+  --foreground: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 1280px;
+  padding: 30px 20px;
+}
+
+/* fade transition */
+.fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.fade-in.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Loading animation */
+.loading {
+  --d: 44px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  color: rgb(245 158 11);
+  box-shadow: calc(1 * var(--d)) calc(0 * var(--d)) 0 0,
+    calc(0.707 * var(--d)) calc(0.707 * var(--d)) 0 2px,
+    calc(0 * var(--d)) calc(1 * var(--d)) 0 4px,
+    calc(-0.707 * var(--d)) calc(0.707 * var(--d)) 0 6px,
+    calc(-1 * var(--d)) calc(0 * var(--d)) 0 8px,
+    calc(-0.707 * var(--d)) calc(-0.707 * var(--d)) 0 10px,
+    calc(0 * var(--d)) calc(-1 * var(--d)) 0 12px;
+  animation: s7 0.5s infinite steps(8);
+}
+
+@keyframes s7 {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+/* Typewriter animation*/
+.typewriter {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.typewriter .write {
+  text-align: left;
+  overflow: hidden;
+  border-right: 0.1em solid black;
+  white-space: nowrap;
+  margin: 0;
+  animation: typing 5s steps(30, end) infinite,
+    blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  75% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+
+@media (max-width: 768px) {
+  .typewriter {
+    flex-direction: column;
+  }
+  .typewriter .write {
+    width: fit-content;
+    align-self: flex-start;
+    /* border-right: none;
+    animation: none; */
+  }
+}
