@@ -51,7 +51,7 @@ const Navbar = () => {
           <ul className="hidden lg:flex space-x-4 text-xl dark:text-zinc-300">
             <li>
               <Link
-                href="/not-found"
+                href="https://kyronode.gitbook.io/"
                 target="_blank"
                 className="px-4 py-2 rounded-lg transition duration-300 ease-in-out hover:bg-amber-700 hover:text-white dark:hover:bg-amber-600 dark:hover:text-black"
               >
