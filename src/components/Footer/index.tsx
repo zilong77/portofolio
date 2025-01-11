@@ -4,7 +4,7 @@ import { GithubLogo, TelegramLogo, TwitterLogo } from "@phosphor-icons/react";
 import Link from "next/link";
 
 function Footer() {
-  const emailAddress = "kyronode@gmail.com";
+  const emailAddress = "kyronodes@gmail.com";
   const telegtamUsername = "kyronode";
   const twitterUsername = "kyronode";
   const githubUsername = "kyronode";
@@ -14,7 +14,7 @@ function Footer() {
       <div className="container container mx-auto max-w-screen-xl px-4 pt-8 pb-20 gap-4 flex flex-col md:flex-row justify-between items-center text-black dark:text-zinc-300 z-10">
         {/* Copyright */}
         <p className="p-4 text-lg">
-          Copyright © 2024 Kyronode. All Rights Reserved.
+          Copyright © 2025 Kyronode. All Rights Reserved.
         </p>
         {/* Navigation & Contact Us */}
         <div className="flex text-lg gap-4 md:gap-8 px-4">
@@ -23,7 +23,7 @@ function Footer() {
 
             <Link
               className="hover:text-amber-700 dark:hover:text-amber-600"
-              href={"/not-found"}
+              href={"https://kyronode.gitbook.io/"}
               target="_blank"
             >
               Services
