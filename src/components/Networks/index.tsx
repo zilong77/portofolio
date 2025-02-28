@@ -85,6 +85,15 @@ const Networks = () => {
       explorer: "https://alps.dill.xyz/",
       stake: "",
     },
+    {
+      id: 11,
+      image: "/images/Networks/union.png",
+      name: "Union",
+      services: "/not-found",
+      explorer: "https://testnet.kyronode.xyz/union",
+      stake:
+       "https://testnet.kyronode.xyz/union/staking/unionvaloper1xd5fqg7sut4swx59aqgf8fj3lwmalu6wmj5h5v",
+    }
   ];
   return (
     <section id="networks" className="scroll-mt-28">
