@@ -91,6 +91,13 @@ const Networks = () => {
       services: "https://kyronode.gitbook.io/kyronode-docs/testnet/union",
       explorer: "https://testnet.kyronode.xyz/union",
       stake: "https://testnet.kyronode.xyz/union/staking/unionvaloper1xd5fqg7sut4swx59aqgf8fj3lwmalu6wmj5h5v",
+    },
+    {
+      id: 12,
+      image: "/images/Networks/walrus.jpg",
+      name: "Walrus (Kyro x Winsnip)",
+      explorer: "https://walruscan.com/testnet/operator/0x0b99da03c851df39f57a88478f1335d0429174f93bd177b1731dde6cd7e9210d",
+      stake: "https://stake.walrus.site/",
     }
   ];
   return (
