@@ -95,7 +95,7 @@ const Networks = () => {
     {
       id: 12,
       image: "/images/Networks/walrus.jpg",
-      name: "Walrus (Kyro x Winsnip)",
+      name: "Walrus Testnet (Kyro x Winsnip)",
       explorer: "https://walruscan.com/testnet/operator/0x0b99da03c851df39f57a88478f1335d0429174f93bd177b1731dde6cd7e9210d",
       stake: "https://stake.walrus.site/",
     }
