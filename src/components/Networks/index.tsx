@@ -126,6 +126,7 @@ const Networks = () => {
                 <h3 className="text-2xl font-semibold ">{network.name}</h3>
               </div>
               <div className="flex flex-col md:flex-row w-full gap-3">
+              {network.services !== "" && (
                 <Link
                   href={network.services}
                   target="_blank"
@@ -133,6 +134,7 @@ const Networks = () => {
                 >
                   Services
                 </Link>
+              )}
                 <Link
                   href={network.explorer}
                   target="_blank"
