@@ -25,7 +25,7 @@ const Networks = () => {
       name: "0g",
       services: "https://kyronode.gitbook.io/kyronode-docs/testnet/0g",
       explorer: "https://testnet.kyronode.xyz/og",
-      stake: "https://testnet.kyronode.xyz/og/staking/",
+      stake: "https://testnet.kyronode.xyz/og/staking/0gvaloper1mnq2d6779vpqtlghm90swyhuhgdr6ty7dhqg97",
     },
     {
       id: 4,
