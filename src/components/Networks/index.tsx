@@ -99,6 +99,14 @@ const Networks = () => {
       services: "",
       explorer: "https://walruscan.com/testnet/operator/0x0b99da03c851df39f57a88478f1335d0429174f93bd177b1731dde6cd7e9210d",
       stake: "https://stake.walrus.site/",
+    },
+    {
+      id: 13,
+      image: "/images/Networks/kiichain.png",
+      name: "Kiichain",
+      services: "https://kyronode.gitbook.io/kyronode-docs/testnet/kiichain",
+      explorer: "https://testnet.kyronode.xyz/kiichain-testnet",
+      stake: "https://testnet.kyronode.xyz/kiichain-testnet/staking/kiivaloper1ruhm3rujndynpgxswjjpvvlp3vhthq8qzfuaqh",
     }
   ];
   return (
