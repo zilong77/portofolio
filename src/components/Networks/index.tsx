@@ -66,7 +66,7 @@ const Networks = () => {
       name: "Zenrock",
       services: "https://kyronode.gitbook.io/kyronode-docs/testnet/zenrock",
       explorer: "https://testnet.kyronode.xyz/zenrock",
-      stake: "https://testnet.kyronode.xyz/zenrock/staking/zenvaloper1ssflt86hk4j2jjack96f3n4t2fuyspecmf0lgp",
+      stake: "https://testnet.kyronode.xyz/zenrock/staking/zenvaloper1fzdsytp8s58d4jwdf0swut2ex268r89kdwdl5t",
     },
     {
       id: 9,
