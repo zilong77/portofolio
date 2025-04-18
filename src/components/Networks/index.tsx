@@ -107,7 +107,23 @@ const Networks = () => {
       services: "https://kyronode.gitbook.io/kyronode-docs/testnet/kiichain",
       explorer: "https://testnet.kyronode.xyz/kiichain-testnet",
       stake: "https://testnet.kyronode.xyz/kiichain-testnet/staking/kiivaloper1ruhm3rujndynpgxswjjpvvlp3vhthq8qzfuaqh",
-    }
+    },
+    {
+      id: 14,
+      image: "/images/Networks/walrus.jpg",
+      name: "Walrus Mainnet (Kyro x Winsnip)",
+      services: "",
+      explorer: "https://walruscan.com/mainnet/operator/0xbf50bcd0befb824f2066cf9b73a20a8e328ae411c816b0b425453c82c0e7ff9c",
+      stake: "https://walruscan.com/mainnet/operator/0xbf50bcd0befb824f2066cf9b73a20a8e328ae411c816b0b425453c82c0e7ff9c",
+    },
+    {
+      id: 15,
+      image: "/images/Networks/zenrock.png",
+      name: "Zenrock Mainnet",
+      services: "https://kyronode.gitbook.io/kyronode-docs/testnet/zenrock",
+      explorer: "https://testnet.kyronode.xyz/zenrock",
+      stake: "https://mainnet.itrocket.net/zenrock/staking/zenvaloper10h47uhgazmcq2v2k694q906czfafc6ddarrz7ct",
+    } 
   ];
   return (
     <section id="networks" className="scroll-mt-28">
